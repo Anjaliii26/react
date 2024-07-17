@@ -46,4 +46,8 @@ const pwaConfig = {
 export default defineConfig({
   basename: "/",
   plugins: [react(), VitePWA(pwaConfig), tailwind()],
+  base: '/E-commerce/', // Ensure this matches the repository name
+  build: {
+    outDir: 'dist',
+  },
 });
