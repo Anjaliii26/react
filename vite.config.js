@@ -1,7 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import tailwind from "tailwindcss";
-
 import { VitePWA } from "vite-plugin-pwa";
 
 // Add PWA configuration
@@ -44,10 +43,9 @@ const pwaConfig = {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  basename: "/",
   plugins: [react(), VitePWA(pwaConfig), tailwind()],
-  base: '/E-commerce/', // Ensure this matches the repository name
-  build: {
-    outDir: 'dist',
-  },
+  base: '/react/', // Updated to match the new repository name
+  // build: {
+  //   outDir: 'dist',
+  // },
 });
